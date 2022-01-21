@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.create-account {
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+}
+input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.6);
+}
+.validation {
+  color: red;
+}
+.check-list {
+  width: 50%;
+  list-style: none;
+  font-size: 0.8rem;
+}
+.button {
+  margin-top: 10px;
+  width: 50%;
+  background-color: #4ecdc4;
+  border: none;
+  color: rgb(245, 236, 236);
+  height: 30px;
+  cursor: pointer;
+}
+.button:hover {
+  margin-top: 10px;
+  width: 50%;
+  background-color: #32857f;
+  border: none;
+  color: rgb(245, 236, 236);
+  height: 30px;
+  cursor: pointer;
 }
